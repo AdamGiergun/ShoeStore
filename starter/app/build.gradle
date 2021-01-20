@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdkVersion 30
@@ -39,9 +40,8 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
     // Navigation
-    def version_navigation = "2.3.2"
-    implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
-    implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
+    implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
