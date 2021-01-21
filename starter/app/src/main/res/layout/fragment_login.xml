@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login.LoginFragment">
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/loginField"
+            android:layout_marginTop="96dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/loginField"
+            android:layout_marginTop="8dp"
+            android:hint="@string/prompt_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/buttonLogin"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="64dp"
+            android:text="@string/action_register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/buttonLogin"
+            android:layout_marginEnd="48dp"
+            android:text="@string/action_login"
+            app:layout_constraintBaseline_toBaselineOf="@+id/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/register" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
