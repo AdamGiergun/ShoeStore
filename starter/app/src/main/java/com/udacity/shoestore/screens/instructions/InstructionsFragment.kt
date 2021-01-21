@@ -1,18 +1,18 @@
-package com.udacity.shoestore.login
+package com.udacity.shoestore.screens.instructions
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.udacity.shoestore.databinding.FragmentLoginBinding
+import com.udacity.shoestore.databinding.FragmentInstructionsBinding
 
-class LoginFragment : Fragment() {
+class InstructionsFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return FragmentLoginBinding.inflate(layoutInflater).root
+        return FragmentInstructionsBinding.inflate(layoutInflater).root
     }
 }
