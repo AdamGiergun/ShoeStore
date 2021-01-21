@@ -37,27 +37,27 @@
             tools:ignore="Autofill" />
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/registerButton"
             style="@style/buttonLogin"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="64dp"
             android:text="@string/action_register"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/login"
+            app:layout_constraintEnd_toStartOf="@+id/loginButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password"
             app:layout_constraintVertical_bias="0.15" />
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/loginButton"
             style="@style/buttonLogin"
             android:layout_marginEnd="48dp"
             android:text="@string/action_login"
-            app:layout_constraintBaseline_toBaselineOf="@+id/register"
+            app:layout_constraintBaseline_toBaselineOf="@+id/registerButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/register" />
+            app:layout_constraintStart_toEndOf="@+id/registerButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
