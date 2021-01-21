@@ -7,4 +7,5 @@
     <string name="action_login">Login</string>
     <string name="instructions">Instructions</string>
     <string name="shoe_list">Shoe list</string>
+    <string name="add_new_shoe">Add new shoe</string>
 </resources>
