@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/instructionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".welcome.WelcomeFragment">
+
+        <TextView
+            android:id="@+id/instructionsText1"
+            android:text="@tools:sample/lorem"
+            app:layout_constraintBottom_toTopOf="@+id/instructionsText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            style="@style/infoText" />
+
+        <TextView
+            android:id="@+id/instructionsText2"
+            android:text="@tools:sample/lorem"
+            app:layout_constraintBottom_toTopOf="@+id/shoeListButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructionsText1"
+            style="@style/infoText" />
+
+        <Button
+            android:id="@+id/shoeListButton"
+            android:text="@string/shoe_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructionsText2"
+            style="@style/infoButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
