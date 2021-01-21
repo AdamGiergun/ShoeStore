@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
@@ -17,6 +18,9 @@ class WelcomeFragment : Fragment() {
         return FragmentWelcomeBinding.inflate(inflater).run{
             welcomeText1.movementMethod = ScrollingMovementMethod()
             welcomeText2.movementMethod = ScrollingMovementMethod()
+            instructionsButton.setOnClickListener {
+                findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
+            }
             root
         }
     }
