@@ -1,6 +1,7 @@
 package com.udacity.shoestore.screens.welcome
 
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,10 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return FragmentWelcomeBinding.inflate(layoutInflater).root
+        return FragmentWelcomeBinding.inflate(inflater).run{
+            welcomeText1.movementMethod = ScrollingMovementMethod()
+            welcomeText2.movementMethod = ScrollingMovementMethod()
+            root
+        }
     }
 }
