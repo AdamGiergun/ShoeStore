@@ -28,11 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
             android:clickable="true"
             android:contentDescription="@string/add_new_shoe"
             android:focusable="true"
             app:srcCompat="@drawable/ic_add" />
-
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
