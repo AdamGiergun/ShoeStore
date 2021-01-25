@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -31,13 +32,38 @@
         <item name="android:layout_marginStart">48dp</item>
     </style>
 
-    <style name="infoText">
+    <style name="listLabel" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="listText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+    </style>
+
+    <style name="otherText">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginTop">32dp</item>
         <item name="android:layout_marginEnd">24dp</item>
         <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="otherLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="infoButton">

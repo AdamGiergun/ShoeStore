@@ -12,9 +12,10 @@
 
         <TextView
             android:id="@+id/nameLabel"
-            style="@style/infoText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/otherLabel"
+            android:background="@color/colorLabelBackground"
+            android:paddingStart="@dimen/label_padding"
+            android:paddingEnd="@dimen/label_padding"
             android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -25,9 +26,10 @@
 
         <TextView
             android:id="@+id/companyLabel"
-            style="@style/infoText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/otherLabel"
+            android:background="@color/colorLabelBackground"
+            android:paddingStart="@dimen/label_padding"
+            android:paddingEnd="@dimen/label_padding"
             android:text="@string/company"
             app:layout_constraintBottom_toTopOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -36,9 +38,10 @@
 
         <TextView
             android:id="@+id/sizeLabel"
-            style="@style/infoText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/otherLabel"
+            android:background="@color/colorLabelBackground"
+            android:paddingStart="@dimen/label_padding"
+            android:paddingEnd="@dimen/label_padding"
             android:text="@string/size"
             app:layout_constraintBottom_toTopOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -47,9 +50,10 @@
 
         <TextView
             android:id="@+id/descriptionLabel"
-            style="@style/infoText"
-            android:layout_width="92dp"
-            android:layout_height="wrap_content"
+            style="@style/otherLabel"
+            android:background="@color/colorLabelBackground"
+            android:paddingStart="@dimen/label_padding"
+            android:paddingEnd="@dimen/label_padding"
             android:text="@string/description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,49 +61,55 @@
 
         <EditText
             android:id="@+id/nameText"
-            style="@style/infoText"
+            style="@style/otherText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/name"
             android:importantForAutofill="no"
             android:inputType="text"
+            android:nextFocusDown="@id/companyText"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameLabel"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/descriptionLabel"
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintStart_toEndOf="@+id/descriptionLabel">
+
+            <requestFocus />
+        </EditText>
 
         <EditText
             android:id="@+id/companyText"
-            style="@style/infoText"
+            style="@style/otherText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/company"
             android:importantForAutofill="no"
             android:inputType="text"
+            android:nextFocusDown="@id/sizeText"
             app:layout_constraintBaseline_toBaselineOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionLabel" />
 
         <EditText
             android:id="@+id/sizeText"
-            style="@style/infoText"
+            style="@style/otherText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/size"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
+            android:nextFocusDown="@id/descriptionText"
             app:layout_constraintBaseline_toBaselineOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionLabel" />
 
         <EditText
             android:id="@+id/descriptionText"
-            style="@style/infoText"
+            style="@style/otherText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/description"
             android:importantForAutofill="no"
             android:inputType="text"
+            android:nextFocusDown="@id/saveButton"
             app:layout_constraintBaseline_toBaselineOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionLabel" />
@@ -108,14 +118,14 @@
             android:id="@+id/cancelButton"
             style="@style/buttonLogin"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginBottom="48dp"
             android:text="@string/cancel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/saveButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionText"
-            app:layout_constraintVertical_bias="0.15" />
+            app:layout_constraintVertical_bias="0.050000012" />
 
         <Button
             android:id="@+id/saveButton"

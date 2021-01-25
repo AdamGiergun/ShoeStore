@@ -29,7 +29,6 @@
             style="@style/loginField"
             android:layout_marginTop="8dp"
             android:hint="@string/prompt_password"
-            android:imeOptions="actionDone"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

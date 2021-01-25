@@ -21,7 +21,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
-            style="@style/infoText" />
+            style="@style/otherText" />
 
         <TextView
             android:id="@+id/instructionsText2"
@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/instructionsText1"
-            style="@style/infoText" />
+            style="@style/otherText" />
 
         <Button
             android:id="@+id/shoeListButton"

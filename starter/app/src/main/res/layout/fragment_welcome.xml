@@ -15,7 +15,7 @@
 
         <TextView
             android:id="@+id/welcomeText1"
-            style="@style/infoText"
+            style="@style/otherText"
             android:text="@string/sample_text1"
             app:layout_constraintBottom_toTopOf="@+id/welcomeText2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/welcomeText2"
-            style="@style/infoText"
+            style="@style/otherText"
             android:text="@string/sample_text2"
             app:layout_constraintBottom_toTopOf="@+id/instructionsButton"
             app:layout_constraintEnd_toEndOf="parent"
