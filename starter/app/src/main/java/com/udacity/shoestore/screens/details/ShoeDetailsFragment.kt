@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -28,23 +29,29 @@ class ShoeDetailsFragment: Fragment() {
                 findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragmentCancel())
             }
             saveButton.setOnClickListener {
-                saveShoe()
-                findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragmentSave())
+                if (saveShoe()) findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragmentSave())
             }
             root
         }
     }
 
-    private fun saveShoe() {
-        val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        binding.run {
-            viewModel.addShoe(
-                nameText.text.toString(),
-                companyText.text.toString(),
-                sizeText.text.toString().toDouble(),
-                descriptionText.text.toString()
-            )
-            imm.hideSoftInputFromWindow(root.windowToken, 0)
+    private fun saveShoe(): Boolean {
+        return binding.run {
+            if (nameText.text.isEmpty() || companyText.text.isEmpty() ||
+            sizeText.text.isEmpty() || descriptionText.text.isEmpty()) {
+                Toast.makeText(requireContext(), "Fill in all fields", Toast.LENGTH_SHORT).show()
+                false
+            } else {
+                viewModel.addShoe(
+                    nameText.text.toString(),
+                    companyText.text.toString(),
+                    sizeText.text.toString().toDouble(),
+                    descriptionText.text.toString()
+                )
+                val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(root.windowToken, 0)
+                true
+            }
         }
     }
 }
