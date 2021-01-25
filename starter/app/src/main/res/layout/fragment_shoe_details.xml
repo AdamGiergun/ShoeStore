@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/size"
             android:importantForAutofill="no"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             app:layout_constraintBaseline_toBaselineOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionLabel" />
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/description"
             android:importantForAutofill="no"
-            android:inputType="textMultiLine"
+            android:inputType="text"
             app:layout_constraintBaseline_toBaselineOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/descriptionLabel" />
