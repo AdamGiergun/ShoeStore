@@ -7,24 +7,46 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
-import com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
 
 class LoginFragment : Fragment() {
+
+    private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         return FragmentLoginBinding.inflate(inflater).run {
+            binding = this
             loginButton.setOnClickListener {
-                navigateToWelcomeScreen(it)
+                if (isLoginValid()) navigateToWelcomeScreen(it)
             }
             registerButton.setOnClickListener {
-                navigateToWelcomeScreen(it)
+                if (isLoginValid()) navigateToWelcomeScreen(it)
             }
             root
+        }
+    }
+
+    private fun isLoginValid(): Boolean {
+        return when {
+            binding.username.text.isEmpty() -> {
+                Toast.makeText(requireContext(), getString(R.string.username_is_empty), Toast.LENGTH_SHORT).show()
+                false
+            }
+            binding.password.text.isEmpty() -> {
+                Toast.makeText(requireContext(), getString(R.string.password_is_empty), Toast.LENGTH_SHORT).show()
+                false
+            }
+            else -> {
+                binding.username.text = null
+                binding.password.text = null
+                true
+            }
         }
     }
 

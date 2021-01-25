@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.MainViewModel
+import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
 
 class ShoeDetailsFragment: Fragment() {
@@ -39,7 +40,7 @@ class ShoeDetailsFragment: Fragment() {
         return binding.run {
             if (nameText.text.isEmpty() || companyText.text.isEmpty() ||
             sizeText.text.isEmpty() || descriptionText.text.isEmpty()) {
-                Toast.makeText(requireContext(), "Fill in all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.fill_in_all_fields), Toast.LENGTH_SHORT).show()
                 false
             } else {
                 viewModel.addShoe(
