@@ -1,9 +1,11 @@
 package com.udacity.shoestore.screens.details
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -38,6 +40,7 @@ class ShoeDetailsFragment: Fragment() {
     }
 
     private fun saveShoe() {
+        val imm = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         binding.run {
             viewModel.addShoe(
                 nameText.text.toString(),
@@ -45,6 +48,7 @@ class ShoeDetailsFragment: Fragment() {
                 sizeText.text.toString().toDouble(),
                 descriptionText.text.toString()
             )
+            imm.hideSoftInputFromWindow(root.windowToken, 0)
         }
     }
 }
