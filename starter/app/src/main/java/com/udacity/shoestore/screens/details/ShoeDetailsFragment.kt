@@ -25,18 +25,14 @@ class ShoeDetailsFragment: Fragment() {
         return FragmentShoeDetailsBinding.inflate(inflater).run {
             binding = this
             cancelButton.setOnClickListener {
-                navigateToShoeList()
+                findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragmentCancel())
             }
             saveButton.setOnClickListener {
                 saveShoe()
-                navigateToShoeList()
+                findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragmentSave())
             }
             root
         }
-    }
-
-    private fun navigateToShoeList() {
-        findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())
     }
 
     private fun saveShoe() {
