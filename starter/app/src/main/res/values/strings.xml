@@ -1,20 +1,20 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">Shoe Store</string>
 
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_register">Register</string>
     <string name="action_login">Login</string>
     <string name="instructions">Instructions</string>
-    <string name="shoe_list">Shoe list</string>
+    <string name="shoe_list">Shoe List</string>
     <string name="add_new_shoe">Add new shoe</string>
 
-    <string name="sample_text1">About Us \n\n At shoe.com, our purpose is simple: to live and deliver WOW. \n \n
+    <string name="sample_text1">Sample text 1 \n\n At shoe.com, our purpose is simple: to live and deliver WOW. \n \n
         Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes — as well as clothing, handbags, accessories, and more.
         That more is providing the very best customer service, customer experience, and company culture. We aim to inspire the world by showing it\'s possible to
         simultaneously deliver happiness to customers, employees, vendors, shareholders, and the community in a long-term, sustainable way.\n \n
         We hope that in the future people won\'t even realize we started selling shoes online. Instead, they\'ll know shoe as a service company that just happens to sell ________.\n</string>
-    <string name="sample_text2">Our Beginnings \n\n
+    <string name="sample_text2">Sample text 2 \n\n
         The year was 1999, and Nick Somebody was shopping at a San Francisco mall looking for a pair of brown Airwalk Desert Chukka boots. One store had the right style,
         but not the right color. Another store had the right color, but not the right size. Searching for hours, Nick left empty-handed and frustrated. \n\n
         At that moment, by identifying the gap between what customers needed and what online retail could accomplish, Nick decided to quit his day job and solve this problem himself. \n\n
@@ -31,4 +31,8 @@
     <string name="fill_in_all_fields">Fill in all fields</string>
     <string name="username_is_empty">Username is empty</string>
     <string name="password_is_empty">Password is empty</string>
+
+    <string name="login_to_shoe_store">Login to Shoe Store</string>
+    <string name="welcome_to_shoe_store">Welcome to Shoe Store</string>
+    <string name="shoe_details">Shoe Details</string>
 </resources>
