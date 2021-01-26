@@ -15,7 +15,7 @@
 
         <TextView
             android:id="@+id/instructionsText1"
-            style="@style/otherText"
+            style="@style/OtherText"
             android:text="@string/sample_text2"
             app:layout_constraintBottom_toTopOf="@+id/shoeListButton"
             app:layout_constraintEnd_toStartOf="@+id/instructionsText2"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/instructionsText2"
-            style="@style/otherText"
+            style="@style/OtherText"
             android:text="@string/sample_text1"
             app:layout_constraintBottom_toBottomOf="@+id/instructionsText1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
 
         <Button
             android:id="@+id/shoeListButton"
-            style="@style/infoButton"
+            style="@style/InfoButton"
             android:text="@string/shoe_list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

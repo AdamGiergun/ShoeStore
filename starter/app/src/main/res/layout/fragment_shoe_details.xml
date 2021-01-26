@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/nameLabel"
-            style="@style/otherLabel"
+            style="@style/OtherLabel"
             android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/companyLabel"
-            style="@style/otherLabel"
+            style="@style/OtherLabel"
             android:text="@string/company"
             app:layout_constraintBottom_toTopOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -34,7 +34,7 @@
 
         <TextView
             android:id="@+id/sizeLabel"
-            style="@style/otherLabel"
+            style="@style/OtherLabel"
             android:text="@string/size"
             app:layout_constraintBottom_toTopOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -43,7 +43,7 @@
 
         <TextView
             android:id="@+id/descriptionLabel"
-            style="@style/otherLabel"
+            style="@style/OtherLabel"
             android:text="@string/description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
 
         <EditText
             android:id="@+id/nameText"
-            style="@style/detailsEditText"
+            style="@style/DetailsEditText"
             android:hint="@string/name"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -65,7 +65,7 @@
 
         <EditText
             android:id="@+id/companyText"
-            style="@style/detailsEditText"
+            style="@style/DetailsEditText"
             android:hint="@string/company"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -76,7 +76,7 @@
 
         <EditText
             android:id="@+id/sizeText"
-            style="@style/detailsEditText"
+            style="@style/DetailsEditText"
             android:hint="@string/size"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
@@ -87,7 +87,7 @@
 
         <EditText
             android:id="@+id/descriptionText"
-            style="@style/detailsEditText"
+            style="@style/DetailsEditText"
             android:hint="@string/description"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -98,7 +98,7 @@
 
         <Button
             android:id="@+id/cancelButton"
-            style="@style/buttonLogin"
+            style="@style/LoginButton"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="48dp"
             android:text="@string/cancel"
@@ -111,7 +111,7 @@
 
         <Button
             android:id="@+id/saveButton"
-            style="@style/buttonLogin"
+            style="@style/LoginButton"
             android:layout_marginEnd="48dp"
             android:text="@string/save"
             app:layout_constraintBaseline_toBaselineOf="@+id/cancelButton"

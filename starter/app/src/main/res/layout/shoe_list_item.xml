@@ -22,7 +22,7 @@
 
         <TextView
             android:id="@+id/nameLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -33,7 +33,7 @@
 
         <TextView
             android:id="@+id/companyLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/company"
             app:layout_constraintBottom_toTopOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -42,7 +42,7 @@
 
         <TextView
             android:id="@+id/sizeLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/size"
             app:layout_constraintBottom_toTopOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -51,7 +51,7 @@
 
         <TextView
             android:id="@+id/descriptionLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:layout_width="wrap_content"
             android:text="@string/description"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -60,7 +60,7 @@
 
         <TextView
             android:id="@+id/itemName"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{shoe.name}"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameLabel"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
 
         <TextView
             android:id="@+id/itemCompany"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{shoe.company}"
             app:layout_constraintBaseline_toBaselineOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +77,7 @@
 
         <TextView
             android:id="@+id/itemSize"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{String.valueOf(shoe.size)}"
             app:layout_constraintBaseline_toBaselineOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +85,7 @@
 
         <TextView
             android:id="@+id/itemDescription"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{shoe.description}"
             app:layout_constraintBaseline_toBaselineOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="parent"

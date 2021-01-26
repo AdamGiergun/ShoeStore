@@ -19,42 +19,42 @@
 
         <TextView
             android:id="@+id/nameLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/name" />
 
         <TextView
             android:id="@+id/itemName"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{shoe.name}" />
 
         <TextView
             android:id="@+id/companyLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/company" />
 
         <TextView
             android:id="@+id/itemCompany"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{shoe.company}" />
 
         <TextView
             android:id="@+id/sizeLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/size" />
 
         <TextView
             android:id="@+id/itemSize"
-            style="@style/listText"
+            style="@style/ListText"
             android:text="@{String.valueOf(shoe.size)}" />
 
         <TextView
             android:id="@+id/descriptionLabel"
-            style="@style/listLabel"
+            style="@style/ListLabel"
             android:text="@string/description" />
 
         <TextView
             android:id="@+id/itemDescription"
-            style="@style/listText"
+            style="@style/ListText"
             android:maxLines="4"
             android:text="@{shoe.description}" />
 

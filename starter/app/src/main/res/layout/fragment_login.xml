@@ -15,7 +15,7 @@
 
         <EditText
             android:id="@+id/username"
-            style="@style/loginField"
+            style="@style/LoginField"
             android:layout_marginTop="@dimen/login_margin_top"
             android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
@@ -26,7 +26,7 @@
 
         <EditText
             android:id="@+id/password"
-            style="@style/loginField"
+            style="@style/LoginField"
             android:layout_marginTop="8dp"
             android:hint="@string/prompt_password"
             android:inputType="textPassword"
@@ -37,7 +37,7 @@
 
         <Button
             android:id="@+id/registerButton"
-            style="@style/buttonLogin"
+            style="@style/LoginButton"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="64dp"
             android:text="@string/action_register"
@@ -50,7 +50,7 @@
 
         <Button
             android:id="@+id/loginButton"
-            style="@style/buttonLogin"
+            style="@style/LoginButton"
             android:layout_marginEnd="48dp"
             android:text="@string/action_login"
             app:layout_constraintBaseline_toBaselineOf="@+id/registerButton"
