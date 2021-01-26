@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginLayout">
 
+    <!--
+        layout simpler to implement as ConstraintLayout
+        (has column of views and row of buttons)
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

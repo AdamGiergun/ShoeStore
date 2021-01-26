@@ -10,6 +10,10 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--
+        layout simpler to implement as ConstraintLayout
+        (has columns, rows and divider)
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/itemLayout"
         android:layout_width="match_parent"

@@ -3,6 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+        layout simpler to implement as ConstraintLayout
+        (due to character of text views and placement of button)
+     -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/instructionsLayout"
         android:layout_width="match_parent"
