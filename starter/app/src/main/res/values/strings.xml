@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Shoe Store</string>
+    <string name="app_name">SHOE STORE</string>
 
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_register">Register</string>
-    <string name="action_login">Login</string>
-    <string name="instructions">Instructions</string>
-    <string name="shoe_list">Shoe List</string>
-    <string name="add_new_shoe">Add new shoe</string>
+    <string name="action_register">REGISTER</string>
+    <string name="action_login">LOGIN</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="shoe_list">SHOE LIST</string>
+    <string name="add_new_shoe">ADD NEW SHOE</string>
 
     <string name="sample_text1">Sample text 1 \n\n At shoe.com, our purpose is simple: to live and deliver WOW. \n \n
         Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes — as well as clothing, handbags, accessories, and more.
@@ -21,18 +21,18 @@
         The idea was simple in concept but not so simple in execution. Nick wanted to serve customers who resorted to catalogs and mail orders for the shoes they wanted but
         couldn’t find in their local stores. So, he launched ShoeSite.com, which soon changed to shoe.com. With years of hard work, shoe now carries thousands of footwear products
         to meet every need and occasion.</string>
-    <string name="logout">Logout</string>
+    <string name="logout">LOGOUT</string>
     <string name="name">Name</string>
     <string name="company">Company</string>
     <string name="size">Size</string>
     <string name="description">Description</string>
-    <string name="cancel">Cancel</string>
+    <string name="cancel">@android:string/cancel</string>
     <string name="save">Save</string>
     <string name="fill_in_all_fields">Fill in all fields</string>
     <string name="username_is_empty">Username is empty</string>
     <string name="password_is_empty">Password is empty</string>
 
-    <string name="login_to_shoe_store">Login to Shoe Store</string>
-    <string name="welcome_to_shoe_store">Welcome to Shoe Store</string>
-    <string name="shoe_details">Shoe Details</string>
+    <string name="login_to_shoe_store">LOGIN TO SHOE STORE</string>
+    <string name="welcome_to_shoe_store">WELCOME TO SHOE STORE</string>
+    <string name="shoe_details">SHOE DETAILS</string>
 </resources>
