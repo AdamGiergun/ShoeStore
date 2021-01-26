@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/adamina</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,7 +18,7 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="loginField">
+    <style name="loginField" parent="AppTheme">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">24dp</item>
@@ -25,7 +26,7 @@
         <item name="android:selectAllOnFocus">true</item>
     </style>
 
-    <style name="buttonLogin">
+    <style name="buttonLogin" parent="AppTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">start</item>
@@ -40,7 +41,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="listText">
+    <style name="listText" parent="AppTheme">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">8dp</item>
@@ -48,7 +49,7 @@
         <item name="android:layout_marginEnd">12dp</item>
     </style>
 
-    <style name="otherText">
+    <style name="otherText" parent="AppTheme">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_marginStart">16dp</item>
@@ -57,7 +58,7 @@
         <item name="android:scrollbars">vertical</item>
     </style>
 
-    <style name="otherLabel">
+    <style name="otherLabel" parent="AppTheme">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">20dp</item>
@@ -66,7 +67,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="infoButton">
+    <style name="infoButton" parent="AppTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">48dp</item>
