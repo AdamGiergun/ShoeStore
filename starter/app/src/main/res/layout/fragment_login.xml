@@ -4,14 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginLayout">
 
-    <data>
-
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".screens.login.LoginFragment">
+        tools:context=".MainActivity">
 
         <EditText
             android:id="@+id/username"
