@@ -9,6 +9,7 @@
     <string name="shoe_list">SHOE LIST</string>
     <string name="add_new_shoe">ADD NEW SHOE</string>
 
+    <!-- sample texts are borrowed from https://www.zappos.com/ -->
     <string name="sample_text1">Sample text 1 \n\n At shoe.com, our purpose is simple: to live and deliver WOW. \n \n
         Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes — as well as clothing, handbags, accessories, and more.
         That more is providing the very best customer service, customer experience, and company culture. We aim to inspire the world by showing it\'s possible to
@@ -21,6 +22,7 @@
         The idea was simple in concept but not so simple in execution. Nick wanted to serve customers who resorted to catalogs and mail orders for the shoes they wanted but
         couldn’t find in their local stores. So, he launched ShoeSite.com, which soon changed to shoe.com. With years of hard work, shoe now carries thousands of footwear products
         to meet every need and occasion.</string>
+    
     <string name="logout">LOGOUT</string>
     <string name="name">Name</string>
     <string name="company">Company</string>
