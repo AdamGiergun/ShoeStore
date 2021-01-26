@@ -9,7 +9,7 @@
     <string name="shoe_list">SHOE LIST</string>
     <string name="add_new_shoe">ADD NEW SHOE</string>
 
-    <!-- sample texts are borrowed from https://www.zappos.com/ -->
+    <!-- sample texts are borrowed from https://www.zappos.com/ for filling text fields with some non-important content -->
     <string name="sample_text1">Sample text 1 \n\n At shoe.com, our purpose is simple: to live and deliver WOW. \n \n
         Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes — as well as clothing, handbags, accessories, and more.
         That more is providing the very best customer service, customer experience, and company culture. We aim to inspire the world by showing it\'s possible to
