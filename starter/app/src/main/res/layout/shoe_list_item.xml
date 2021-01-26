@@ -19,8 +19,6 @@
         <TextView
             android:id="@+id/nameLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -32,8 +30,6 @@
         <TextView
             android:id="@+id/companyLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/company"
             app:layout_constraintBottom_toTopOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -43,8 +39,6 @@
         <TextView
             android:id="@+id/sizeLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/size"
             app:layout_constraintBottom_toTopOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -55,8 +49,6 @@
             android:id="@+id/descriptionLabel"
             style="@style/listLabel"
             android:layout_width="wrap_content"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

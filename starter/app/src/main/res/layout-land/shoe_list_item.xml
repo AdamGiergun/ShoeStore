@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:id="@+id/itemLayout"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".screens.list.ShoeListFragment">
@@ -19,60 +19,42 @@
         <TextView
             android:id="@+id/nameLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/name" />
 
         <TextView
             android:id="@+id/itemName"
             style="@style/listText"
-            android:paddingStart="16dp"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@{shoe.name}" />
 
         <TextView
             android:id="@+id/companyLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/company" />
 
         <TextView
             android:id="@+id/itemCompany"
             style="@style/listText"
-            android:paddingStart="16dp"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@{shoe.company}" />
 
         <TextView
             android:id="@+id/sizeLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/size" />
 
         <TextView
             android:id="@+id/itemSize"
             style="@style/listText"
-            android:paddingStart="16dp"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@{String.valueOf(shoe.size)}" />
 
         <TextView
             android:id="@+id/descriptionLabel"
             style="@style/listLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/description" />
 
         <TextView
             android:id="@+id/itemDescription"
             style="@style/listText"
-            android:lines="4"
             android:maxLines="4"
-            android:paddingStart="16dp"
-            android:paddingEnd="@dimen/label_padding"
-            android:layout_width="200dp"
             android:text="@{shoe.description}" />
 
     </LinearLayout>

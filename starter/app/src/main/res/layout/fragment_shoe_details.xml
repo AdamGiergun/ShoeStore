@@ -11,8 +11,6 @@
         <TextView
             android:id="@+id/nameLabel"
             style="@style/otherLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/companyLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -24,8 +22,6 @@
         <TextView
             android:id="@+id/companyLabel"
             style="@style/otherLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/company"
             app:layout_constraintBottom_toTopOf="@+id/sizeLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -35,8 +31,6 @@
         <TextView
             android:id="@+id/sizeLabel"
             style="@style/otherLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/size"
             app:layout_constraintBottom_toTopOf="@+id/descriptionLabel"
             app:layout_constraintEnd_toEndOf="@+id/descriptionLabel"
@@ -46,8 +40,6 @@
         <TextView
             android:id="@+id/descriptionLabel"
             style="@style/otherLabel"
-            android:paddingStart="@dimen/label_padding"
-            android:paddingEnd="@dimen/label_padding"
             android:text="@string/description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +47,7 @@
 
         <EditText
             android:id="@+id/nameText"
-            style="@style/otherText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/detailsEditText"
             android:hint="@string/name"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -71,9 +61,7 @@
 
         <EditText
             android:id="@+id/companyText"
-            style="@style/otherText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/detailsEditText"
             android:hint="@string/company"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -84,9 +72,7 @@
 
         <EditText
             android:id="@+id/sizeText"
-            style="@style/otherText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/detailsEditText"
             android:hint="@string/size"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
@@ -97,9 +83,7 @@
 
         <EditText
             android:id="@+id/descriptionText"
-            style="@style/otherText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/detailsEditText"
             android:hint="@string/description"
             android:importantForAutofill="no"
             android:inputType="text"

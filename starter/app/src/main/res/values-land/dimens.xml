@@ -2,4 +2,7 @@
 <resources>
     <dimen name="login_margin_top">48dp</dimen>
     <dimen name="info_button_margin">16dp</dimen>
+    <dimen name="list_label_left_margin">16dp</dimen>
+    <dimen name="list_layout_width">300dp</dimen>
+    <dimen name="list_text_left_margin">24dp</dimen>
 </resources>

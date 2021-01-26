@@ -4,4 +4,7 @@
     <dimen name="label_padding">8dp</dimen>
     <dimen name="login_margin_top">96dp</dimen>
     <dimen name="info_button_margin">32dp</dimen>
+    <dimen name="list_label_left_margin">16dp</dimen>
+    <dimen name="list_layout_width">0dp</dimen>
+    <dimen name="list_text_left_margin">16dp</dimen>
 </resources>
