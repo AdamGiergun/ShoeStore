@@ -3,4 +3,5 @@
     <dimen name="fab_margin">48dp</dimen>
     <dimen name="label_padding">8dp</dimen>
     <dimen name="login_margin_top">96dp</dimen>
+    <dimen name="info_button_margin">32dp</dimen>
 </resources>
